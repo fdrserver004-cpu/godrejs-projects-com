@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+   <link rel="shortcut icon" href="img/favicon.png" type="image/favicon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Godrej Projects In Noida</title>
+
+
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11554677491"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-11554677491');
+   </script>
+
+
+
+
+   <style>
+      .form-popup-bg {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         justify-content: center;
+      }
+
+      .form-popup-bg {
+         position: fixed;
+         left: 0;
+         top: 0;
+         height: 100%;
+         width: 100%;
+         background-color: rgba(94, 110, 141, 0.9);
+         opacity: 0;
+         visibility: hidden;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         transition: opacity 0.3s 0s, visibility 0s 0.3s;
+         overflow-y: auto;
+         z-index: 10000;
+      }
+
+      .form-popup-bg.is-visible {
+         opacity: 1;
+         visibility: visible;
+         -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+         -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+         transition: opacity 0.3s 0s, visibility 0s 0s;
+      }
+
+      .form-popup-bg .form-container {
+         background-color: #2d3638;
+         border-radius: 10px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         max-width: 700px;
+         margin-left: auto;
+         margin-right: auto;
+         position: relative;
+         padding: 40px;
+         color: #fff;
+      }
+
+      .form-popup-bg .close-button {
+         background: none;
+         color: #fff;
+         width: 40px;
+         height: 40px;
+         position: absolute;
+         top: 0;
+         right: 0;
+         border: solid 1px #fff;
+      }
+
+      .form-popup-bg:before {
+         content: '';
+         background-color: #fff;
+         opacity: .25;
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+
+
+
+      /*  */
+
+      .popfp .form-container {
+         background-color: #37403d;
+         border-radius: 10px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         max-width: 636px;
+         margin-left: auto;
+         margin-right: auto;
+         position: relative;
+
+         color: #ffffff;
+      }
+
+      .popfp .popup_form {
+         width: 100%;
+         padding: .375rem .75rem;
+         font-size: 1rem;
+         font-weight: 400;
+         line-height: 2.5;
+         background: none;
+         border: 1px solid #000;
+         outline: none;
+         color: #000;
+         background-clip: inherit !important;
+      }
+
+
+
+      .popfp .form-container h5 {
+         color: #ffffff;
+         font-size: 20px !important;
+      }
+
+      .popfp .form-container .form-control::placeholder {
+         color: #000000 !important;
+      }
+
+      .header_bg_close {
+         background: linear-gradient(90deg, rgb(42, 123, 155) 4%, rgb(55, 146, 148) 44%, rgb(77, 167, 133) 100%);
+      }
+
+      .b-user-message {
+         position: absolute;
+         left: -5000px;
+         text-indent: 100%;
+         white-space: nowrap;
+         overflow: hidden;
+      }
+   </style>
+
+</head>
+
+<body>
+   <div class="modal fade popfp" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+      <div class="modal-dialog form-container">
+         <div class="modal-content ">
+            <div class="modal-header header_bg_close">
+               <h5 class="modal-title" id="enquireModalLabel">Godrej Projects In Noida</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="row  align-items-center">
+               <div class="col-sm-6 col-sm-6">
+                  <div class="img_frpm">
+                     <img src="img/about_img.png" alt="pup_img" width="100%">
+                  </div>
+               </div>
+               <div class="col-sm-6 col-sm-6">
+                  <div class="form_text">
+                     <div class="modal-body form_text">
+                        <form class="contact-box rt-contact-form1 banner_form" action="https://fdr-api.pixleo.com/lead"
+                           method="post">
+                           <div class=row>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME"
+                                    class="form-control popup_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                              </div>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                    class="form-control popup_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                              </div>
+                              <div class="col-lg-12 form-group mb-2">
+                                 <input autocomplete="off" type="text" id="PHONE" name="PHONE"
+                                    class="form-control popup_form" data-error="Phone is required"
+                                    placeholder="Phone/Mobile" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                              </div>
+
+                              <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                                 value="https://www.godrejs-newproject.com/noida-platter/int">
+                              <div class="col-lg-12 form-group">
+                                 <div class=advanced-button>
+                                    <button class=item-btn id="SubmitQuerytop" type=submit>GET CALL BACK</button>
+                                    <input autocomplete="off" id="prog550688" name="PROJECT" maxlength="200"
+                                       type="hidden" value="Godrej Projects In Noida">
+                                    <input autocomplete=off id=LOCATION name=LOCATION maxlength=200 type=hidden
+                                       value="Noida">
+                                    <input autocomplete=off id=TEAM name=TEAM maxlength=200 type=hidden
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class=form-response></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <!-- modal popup on restart -->
+   <div class="modal fade madal-reload" id="exampleModal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close btan_g" data-bs-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body ">
+
+               <div class="row pt-2 align-items-center">
+                  <div class="col-sm-6">
+                     <div class="modal_form_img mb-4 mb-lg-0">
+
+                        <img src="img/about_img.png" width="100%" alt="">
+                     </div>
+                  </div>
+                  <div class="col-sm-6">
+                     <div class="form_modal text-center">
+                        <div class="motal_form_text pb-2">
+                           <h5 class="modal-title" id="exampleModalLabel">Godrej Projects In Noida</h5>
+
+                           <p class="mb-1 pt-2 mb-2 mt-1"><b> Type : </b>3, 3.5 & 4 BHK Luxury Apartments </p>
+
+                        </div>
+                        <form method="post" action="https://fdr-api.pixleo.com/lead"
+                           class="contact-form banner_form pt-2">
+                           <div class="form_sectionr row text-center justify-content-center">
+
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME"
+                                    class="form-control text_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                                 <span class="icon-inside"><i class="fas fa-user"></i></span>
+                              </div>
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                    class="form-control text_form email-address"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                                 <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                              </div>
+                              <div class="mb-3 position-relative col-lg-12">
+                                 <input autocomplete="off" type="text" id="PHONE" name="PHONE"
+                                    class="form-control text_form number-only" data-error="Phone is required"
+                                    placeholder="Phone/Mobile" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                 <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                              </div>
+                              <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                                 value="https://www.godrejs-newproject.com/noida-platter/int">
+
+                              <div class="col-lg-12 form-group">
+                                 <div class="advanced-button">
+                                    <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                       CALL BACK</button>
+                                    <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                                       value="Godrej Projects In Noida">
+                                    <input autocomplete=" off" id="LOCATION" name="LOCATION" maxlength="200"
+                                       type="hidden" value="Noida">
+                                    <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-response"></div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+   </div>
+   <!--  -->
+
+
+
+
+
+   <!-- ===========================btn sticky icon start================================== -->
+   <div class="sticky_icon">
+      <div class="social_icon">
+         <ul class="d-flex">
+            <div class="col-4">
+               <li><a href="tel:+91-6364884024">Phone</a></li>
+            </div>
+            <div class="col-4">
+               <li><a href="https://api.whatsapp.com/send?phone=+919910111300 &amp;text=Hello, Godrej Projects In Noida Get in touch with me my name is"
+                     target="_blank" class="fixed-Whatsapp">Whatsapp</a></li>
+            </div>
+            <div class="col-4 border-0">
+               <li><a class="property-link" onclick="proprtyForm('Godrej Projects In Noida')" href="#">Enquire</a>
+               </li>
+            </div>
+         </ul>
+      </div>
+   </div>
+   <!-- ===========================btn sticky icon end================================== -->
+   <!-- ==============btn scroll section start===================== -->
+   <div class="go-top">
+   </div>
+   <!-- ==============btn scroll section end===================== -->
+   <!-- =====================header sart ======================== -->
+   <header>
+      <div class="header py-lg-2 py-2">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-2">
+                  <div class="logo">
+                     <a href="#">
+                        <img src="img/logo1.png" width="210px" alt="logo">
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-7">
+                  <div class="menu float-end">
+                     <ul class="d-lg-flex align-items-center">
+                        <li><a class="active hamberger" href="#">Home</a></li>
+                        <li> <a class="hamberger" href="#about-sec">Noida Project</a></li>
+                        <li> <a class="property-link btn-a btnOpenForm"
+                              onclick="proprtyForm('Godrej Projects In Noida')" href="#">Schedule Site
+                              Visit</a></li>
+                        <li> <a class="hamberger" href="#contectus">Contact Us</a></li>
+                     </ul>
+                     <div class="hamberger">
+                        <div class="mobilemenu"> </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-3">
+                  <div class="contect-us float-end d-flex">
+                     <ul class="d- d-none d-lg-block">
+                        <div class="d-flex contect_btn align-items-center">
+                           <li class="me-2"><a href="tel:+91-6364884024"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></a>
+                           </li>
+                           <li> <a href="tel:+91-6364884024"><span>+91-6364884024</span></a> </li>
+                        </div>
+                     </ul>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- =========================header close ========================== -->
+
+
+
+
+
+   <section class="banner__ d-none d-lg-block">
+      <a style="cursor: pointer;" class="property-link btn-a btnOpenForm"
+         onclick="proprtyForm('Godrej Projects In Noida')"><img src="img/banner_godrej.png" alt="banner"
+            class="w-100"></a>
+   </section>
+
+   <section class="banner__ d-block d-md-none">
+      <a style="cursor: pointer;" class="property-link btn-a btnOpenForm"
+         onclick="proprtyForm('Godrej Projects In Noida')"><img src="img/banner_godrej_phone.png" alt="banner"
+            class="w-100"></a>
+   </section>
+
+   <!-- banner img -->
+
+
+
+
+   <main>
+      <div class="projects_main" id="about-sec">
+         <div class="container">
+            <div class="row">
+
+
+
+
+
+               <div class="col-lg-8">
+                  <!-- projects box start -->
+
+         
+
+
+                  <div class="projects_box mb-4" id="lorm1">
+                     <div class="projects_top">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5 mb-3 mb-md-0">
+                              <div class="projects_img">
+                                 <img src="img/Godrej Arden.jpg" width="100%" height="310" alt="">
+                                 <div class="overlay_text">
+                                    <p>Payment Plan : 30:40:30</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7 ps-lg-0">
+                              <div class="projects_text p-2">
+                                 <h2 class="pb-1">Godrej Arden</h2>
+                                 <h3 class="pt-1 mt-1">AT Sector Sigma-III Greater Noida</h3>
+                                 <div class="projects_text_main my-3">
+                                    <div class="row">
+                                       <div class="col-6">
+                                          <div class="projects_li">
+                                             <h3>Type:</h3>
+                                             <h4 class="mt-1">2, 3, 4 BHK Residences</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-6">
+                                          <div class="projects_li border-0">
+                                             <h3>Starting Price:</h3>
+                                             <h4 class="mt-1">₹ 1.63 Cr* Onwards</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="projects_text_highlight mb-3">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="projects_highlight_main">
+                                             <ul>
+                                                <li class="d-flex align-items-center">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Land Area : 9.58 acres</p>
+                                                </li>
+                                                <li class="d-flex align-items-center mt-1">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Total Towers : 9</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btan">
+                                    <a class="property-link btn-a" onclick="proprtyForm('Godrej Arden')">Veiw
+                                       Details</a>
+                                 </div>
+                              </div>
+
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- projects box start -->
+                  <div class="projects_box mb-4" id="lorm1">
+                     <div class="projects_top">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5 mb-3 mb-md-0">
+                              <div class="projects_img">
+                                 <img src="img/Godrej golf links.png" width="100%" height="310" alt="">
+
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7 ps-lg-0">
+                              <div class="projects_text p-2">
+                                 <h2 class="pb-1">Godrej Avenue 9</h2>
+                                 <h3 class="pt-1 mt-1">At Sector 27, Greater Noida</h3>
+                                 <div class="projects_text_main my-3">
+                                    <div class="row">
+                                       <div class="col-6">
+                                          <div class="projects_li">
+                                             <h3>Type:</h3>
+                                             <h4 class="mt-1">Retail Shops (Ground Floor) </h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-6">
+                                          <div class="projects_li border-0">
+                                             <h3>Starting Price:</h3>
+                                             <h4 class="mt-1">₹ 3.4 Cr* Onwards</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="projects_text_highlight mb-3">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="projects_highlight_main">
+                                             <ul>
+                                                <li class="d-flex align-items-center">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Premium Commercial Complex</p>
+                                                </li>
+                                                <li class="d-flex align-items-center mt-1">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Lease Managed By Godrej Properties </p>
+                                                </li>
+
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btan">
+                                    <a class="property-link btn-a" onclick="proprtyForm('Godrej Avenue 9')">Veiw
+                                       Details</a>
+                                 </div>
+                              </div>
+
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  <!-- projects box start -->
+                  <div class="projects_box mb-4" id="lorm1">
+                     <div class="projects_top">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5 mb-3 mb-md-0">
+                              <div class="projects_img">
+                                 <img src="img/Godrej Majesty.png" width="100%" height="310" alt="">
+                                 <div class="overlay_text">
+                                    <p>New Tower Launch Price Starts 3.67 Cr*</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7 ps-lg-0">
+                              <div class="projects_text p-2">
+                                 <h2 class="pb-1">Godrej Majesty</h2>
+                                 <h3 class="pt-1 mt-1">At Sector 12, Greater Noida West</h3>
+                                 <div class="projects_text_main my-3">
+                                    <div class="row">
+                                       <div class="col-6">
+                                          <div class="projects_li">
+                                             <h3>Type:</h3>
+                                             <h4 class="mt-1">3 & 4 BHK Apartments</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-6">
+                                          <div class="projects_li border-0">
+                                             <h3>Starting Price:</h3>
+                                             <h4 class="mt-1">₹ 3.54 Cr* Onwards</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="projects_text_highlight mb-3">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="projects_highlight_main">
+                                             <ul>
+                                                <li class="d-flex align-items-center">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Payment Plan : 20:40:40 </p>
+                                                </li>
+                                                <li class="d-flex align-items-center mt-1">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>A Clubhouse With Lifestyle Amenities </p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btan">
+                                    <a class="property-link btn-a" onclick="proprtyForm('Godrej Majesty')">Veiw
+                                       Details</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+                  <!-- projects box start -->
+                  <div class="projects_box mb-4" id="lorm1">
+                     <div class="projects_top">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5 mb-3 mb-md-0">
+                              <div class="projects_img">
+                                 <img src="img/Godrej Riverine.png" width="100%" height="310" alt="">
+                                 <div class="overlay_text">
+                                    <p>Payment Plan: 20:80</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7 ps-lg-0">
+                              <div class="projects_text p-2">
+                                 <h2 class="pb-1">Godrej Riverine</h2>
+                                 <h3 class="pt-1 mt-1">At Sector 44, Noida</h3>
+                                 <div class="projects_text_main my-3">
+                                    <div class="row">
+                                       <div class="col-6">
+                                          <div class="projects_li">
+                                             <h3>Type:</h3>
+                                             <h4 class="mt-1">3 & 4 BHK Homes</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-6">
+                                          <div class="projects_li border-0">
+                                             <h3>Starting Price:</h3>
+                                             <h4 class="mt-1">₹ 7.99 Cr* Onwards</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="projects_text_highlight mb-3">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="projects_highlight_main">
+                                             <ul>
+                                                <li class="d-flex align-items-center">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>97 acres golf course view</p>
+                                                </li>
+                                                <li class="d-flex align-items-center mt-1">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Theme based on flowing river</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btan">
+                                    <a class="property-link btn-a" onclick="proprtyForm('Godrej Riverine')">Veiw
+                                       Details</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+
+                  <!-- projects box start -->
+                  <div class="projects_box mb-4" id="lorm1">
+                     <div class="projects_top">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5 mb-3 mb-md-0">
+                              <div class="projects_img">
+                                 <img src="img/Tropical Isle Noida.png" width="100%" height="310" alt="">
+                                 <div class="overlay_text">
+                                    <p>New Launch</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7 ps-lg-0">
+                              <div class="projects_text p-2">
+                                 <h2 class="pb-1">Godrej Tropical Isle</h2>
+                                 <h3 class="pt-1 mt-1">At Sector 146, Noida</h3>
+                                 <div class="projects_text_main my-3">
+                                    <div class="row">
+                                       <div class="col-6">
+                                          <div class="projects_li">
+                                             <h3>Type:</h3>
+                                             <h4 class="mt-1">3 & 4 BHK Premium Homes</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-6">
+                                          <div class="projects_li border-0">
+                                             <h3>Starting Price:</h3>
+                                             <h4 class="mt-1">₹ 3.2 Cr* Onwards</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="projects_text_highlight mb-3">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="projects_highlight_main">
+                                             <ul>
+                                                <li class="d-flex align-items-center">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Project Area: 12.4 Acres Acres</p>
+                                                </li>
+                                                <li class="d-flex align-items-center mt-1">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Early Bird Discount: ₹ 2Lacs*</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btan">
+                                    <a class="property-link btn-a" onclick="proprtyForm('Godrej Tropical Isle')">Veiw
+                                       Details</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+                  <!-- projects box start -->
+                  <div class="projects_box mb-4" id="lorm1">
+                     <div class="projects_top">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5 mb-3 mb-md-0">
+                              <div class="projects_img">
+                                 <img src="img/Godrej South Estate.png" width="100%" height="310" alt="">
+                                 <div class="overlay_text">
+                                    <p>Payment Plan : 25:75</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7 ps-lg-0">
+                              <div class="projects_text p-2">
+                                 <h2 class="pb-1">Godrej South Estate</h2>
+                                 <h3 class="pt-1 mt-1">At OKHLA, South Delhi</h3>
+                                 <div class="projects_text_main my-3">
+                                    <div class="row">
+                                       <div class="col-6">
+                                          <div class="projects_li">
+                                             <h3>Type:</h3>
+                                             <h4 class="mt-1">3 BHK Apartments </h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-6">
+                                          <div class="projects_li border-0">
+                                             <h3>Starting Price:</h3>
+                                             <h4 class="mt-1">₹ 5.5 Cr* Onwards</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="projects_text_highlight mb-3">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="projects_highlight_main">
+                                             <ul>
+                                                <li class="d-flex align-items-center">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Luxurious Spa</p>
+                                                </li>
+                                                <li class="d-flex align-items-center mt-1">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>24x7 security
+                                                   </p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btan">
+                                    <a class="property-link btn-a" onclick="proprtyForm('Godrej South Estate')">Veiw
+                                       Details</a>
+                                 </div>
+                              </div>
+
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+               </div>
+               <!-- form left side -->
+               <div class="col-lg-4">
+                  <div class="projects_form_bg d-none d-lg-block">
+                     <div class="Banner-form  float-end">
+                        <form method="post" action="https://fdr-api.pixleo.com/lead" class="contact-form banner_form">
+                           <div class="form_section text-center">
+                              <h3 class="form_title mb-2">Schedule A Site Visit</h3>
+                              <p class="mb-4">Please fill out the form below, our expert will get back to you soon.
+                              </p>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME"
+                                    class="form-control text_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                                 <span class="icon-inside"><i class="fas fa-user"></i></span>
+                              </div>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                    class="form-control text_form email-address"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                                 <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                              </div>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" type="text" id="PHONE" name="PHONE"
+                                    class="form-control text_form number-only" data-error="Phone is required"
+                                    placeholder="Phone/Mobile" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                 <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                              </div>
+                              <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                                 value="https://www.godrejs-newproject.com/noida-platter/int">
+
+                              <div class="col-lg-12 form-group">
+                                 <div class="advanced-button">
+                                    <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                       CALL BACK</button>
+                                    <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                                       value="Godrej Projects In Noida">
+                                    <input autocomplete=" off" id="LOCATION" name="LOCATION" maxlength="200"
+                                       type="hidden" value="Noida">
+                                    <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-response"></div>
+                           </div>
+                        </form>
+                        <div class="helight_text">
+
+                           <ul class="">
+                              </li>
+                              <li class="d-flex align-items-center mt-2 justify-content-center">
+                                 <p>◆ Luxury property.</p>
+                              </li>
+                              <li class="d-flex align-items-center mt-2 justify-content-center">
+                                 <p>◆ Excellent Location.</p>
+                              </li>
+                              <li class="d-flex align-items-center mt-2 justify-content-center">
+                                 <p>◆ World-Class Amenities .</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- form_end -->
+
+
+
+         <!-- projects box start -->
+                  <div class="projects_box mb-4" id="lorm1">
+                     <div class="projects_top">
+                        <div class="row">
+                           <div class="col-lg-5 col-md-5 mb-lg-3 mb-2 mb-md-0">
+                              <div class="projects_img">
+                                 <img src="img/Godrej Connaught One.jpg" width="100%" height="310" alt="">
+                                 <div class="overlay_text">
+                                    <p>New Launch</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-7 col-md-7 ps-lg-0">
+                              <div class="projects_text p-2">
+                                 <h2 class="pb-1">Godrej Connaught One</h2>
+                                 <h3 class="pt-1 mt-1">At Connaught Place, Delhi</h3>
+                                 <div class="projects_text_main my-lg-3 my-2">
+                                    <div class="row">
+                                       <div class="col-6">
+                                          <div class="projects_li">
+                                             <h3>Type:</h3>
+                                             <h4 class="mt-1">Exclusive 3 & 4 BHK Residences</h4>
+                                          </div>
+                                       </div>
+                                       <div class="col-6">
+                                          <div class="projects_li border-0">
+                                             <h3>Starting Price:</h3>
+                                             <h4 class="mt-1">₹ 26 Cr* Onwards</h4>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="projects_text_highlight mb-3">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="projects_highlight_main">
+                                             <ul>
+                                                <li class="d-flex align-items-center">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>Total Area 1 Acre</p>
+                                                </li>
+                                                <li class="d-flex align-items-center mt-1">
+                                                   <h5 class="me-2"><i class="fa-solid fa-square-check"></i></h5>
+                                                   <p>7-Star Living, Prime Delhi</p>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="btan">
+                                    <a class="property-link btn-a" onclick="proprtyForm('Godrej Connaught One')">Veiw
+                                       Details</a>
+                                 </div>
+                              </div>
+
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+
+
+            </div>
+         </div>
+      </div>
+   </main>
+
+
+
+
+
+
+
+
+
+
+
+   <footer>
+      <div class="footer_bg" id="contectus">
+         <div class="footer">
+            <div class="container">
+               <!-- <div class="col-lg-12 text-center mb-5"> <img src="img/logo1.png" width="150" alt=""> </div> -->
+               <div class="row">
+                  <div class="col-lg-7 col-md-6 mb-5">
+                     <div class="footer_contant">
+                        <h3>About Properties In Noida</h3>
+                        <p class="mb-3 mt-3 col-lg-10">We aim to focus on solutions and follow a results-driven,
+                           energetic approach to deliver the best service to our customers through a prudent mix of
+                           traditional marketing, new-age tech tools and innovative strategies.
+                        </p>
+                        <div class="mt-4">
+                           <h4 style="font-size: 15px; line-height: 25px;" class="mt-2">Agent Rera : UPRERAAGT23971 |
+                              Projects Rera - Godrej Jardinia : UPRERAPRJ288309/04/2024 | Godrej woods : UPRERAPRJ704730
+                              | Godrej palm retreat : UPRERAPRJ745601 | Godrej Nurture : UPRERAPRJ17861 | Godrej golf
+                              links : UPRERAPRJ16712 | Godrej Nest : UPRERAPRJ13521 | Godrej South Estate :
+                              DLRERA2019P0003 | Godrej Connaught One : DLRERA2022P0001 </h4>
+                        </div>
+                        <div class="contact_us mt-5">
+                           <ul class="d-flex align-items-center">
+                              <li><a href="tel:+91-6364884024">
+                                    <i class="fa-solid fa-phone-volume"></i></a>
+                              </li>
+                              <li class="ms-3">
+                                 <p class="pb-1">Call Us Anytime</p>
+                                 <a href="tel:+91-6364884024"><span>+91-6364884024</span></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-5  col-md-6 mb-4">
+                     <div class="contect-form d-lg-none d-block">
+                        <form method="post" action="https://fdr-api.pixleo.com/lead" class="contact-form banner_form">
+                           <div class="form_section">
+                              <h3 class="form_title mb-5">Schedule A Site Visit</h3>
+
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" id="FIRSTNAME" name="FIRSTNAME"
+                                    class="form-control text_form"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Your Full Name" pattern="[a-zA-Z ]{4,35}" required="">
+                                 <span class="icon-inside"><i class="fas fa-user"></i></span>
+                              </div>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" type="email" id="EMAIL" name="EMAIL"
+                                    class="form-control text_form email-address"
+                                    data-error="Name cannot contain digit or special character"
+                                    placeholder="Email Address" pattern="\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+"
+                                    required="">
+                                 <span class="icon-inside"><i class="fas fa-envelope"></i></span>
+                              </div>
+                              <div class="mb-4 position-relative">
+                                 <input autocomplete="off" type="text" id="PHONE" name="PHONE"
+                                    class="form-control text_form number-only" data-error="Phone is required"
+                                    placeholder="Phone/Mobile" required=""
+                                    pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}">
+                                 <span class="icon-inside"><i class="fa-solid fa-phone"></i></span>
+                              </div>
+                              <input autocomplete="off" id="DOMAIN" name="DOMAIN" maxlength="200" type="hidden"
+                                 value="https://www.godrejs-newproject.com/noida-platter/int">
+
+                              <div class="col-lg-12 form-group">
+                                 <div class="advanced-button">
+                                    <button class="header_phone theme_button" id="SubmitQuerytop" type="submit">GET
+                                       CALL BACK</button>
+                                    <input autocomplete="off" id="PROJECT" name="PROJECT" maxlength="200" type="hidden"
+                                       value="Godrej Property In Noida">
+                                    <input autocomplete=" off" id="LOCATION" name="LOCATION" maxlength="200"
+                                       type="hidden" value="Noida">
+                                    <input autocomplete="off" id="TEAM" name="TEAM" maxlength="200" type="hidden"
+                                       value="umikoindia">
+                                    <div class="form-group b-user-message">
+                                       <label class="control-label" for="USER_MESSAGE">&nbsp;</label>
+                                       <input id="USER_MESSAGE" type="text" name="USER_MESSAGE" tabindex="-1" value=""
+                                          autocomplete="off" />
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-response"></div>
+                           </div>
+                        </form>
+
+
+
+
+                     </div>
+                  </div>
+               </div>
+               <div class="footer_b mt-5">
+                  <div class="col-sm-12 text-center box">
+                     <p class="col-lg-11 information-web"><b> Disclaimer:</b>The content is for information purposes
+                        only and does not constitute an offer to avail of any service. Prices mentioned are subject
+                        to
+                        change without notice and properties mentioned are subject to availability. Images for
+                        representation purposes only. This website is belong to authorized marketing partner.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer-bootom">
+         <ul class="footermenu">
+            <li>
+               <p style="text-align: center;"><strong><a href="disclaimer.html" target="_blank"><span
+                           style="color: #252525;">Privacy Policy</span></a>&nbsp;|&nbsp;<a href="disclaimer.html"
+                        target="_blank"><span style="color: #1a1a1a;"></span></a> Digital Media Planned
+                     by <a href="http://www.umikoweb.com/" target="_blank">Umiko Web</a> </strong>
+               </p>
+            </li>
+         </ul>
+      </div>
+   </footer>
+
+
+   <script src=" https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+   <script src="js/popper/popper.min.js"></script>
+   <script src="js/bootstrap/bootstrap.min.js"></script>
+
+   <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+   <script src="js/jquery.appear.js"></script>
+   <script src="js/counter/jquery.countTo.js"></script>
+   <script src="js/select2/select2.full.js"></script>
+   <script src="js/range-slider/ion.rangeSlider.min.js"></script>
+   <script src="js/owl-carousel/owl.carousel.min.js"></script>
+   <script src="js/jarallax/jarallax.min.js"></script>
+   <script src="js/jarallax/jarallax-video.min.js"></script>
+   <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+   <!-- <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script> -->
+   <script src="js/main.js"></script>
+
+   <script src="js/custom.js"></script>
+
+   <script>
+      function proprtyForm(titlehoem) {
+         $('#prog550688').val(titlehoem);
+         $('#enquireModalLabel').text(titlehoem);
+         $('#enquireModal').modal('show');
+      }
+
+
+      $(document).ready(function () {
+         setTimeout(() => {
+            $('#newlaunchModal').modal('show')
+         }, 1000);
+      })
+   </script>
+
+
+</body>
+
+</html>
